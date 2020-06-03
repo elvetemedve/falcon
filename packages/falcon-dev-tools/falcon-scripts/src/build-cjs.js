@@ -42,7 +42,7 @@ module.exports.main = async () => {
 
   process.env.ROLLUP = true;
 
-  const extensions = ['.tsx', '.ts', '.jsx', '.js'];
+  const extensions = ['.mjs', '.tsx', '.ts', '.jsx', '.js'];
   const inputFile = getEntryPointFile(paths.pkgSrc, extensions);
   if (!inputFile) {
     return;
